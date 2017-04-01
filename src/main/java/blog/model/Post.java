@@ -8,7 +8,7 @@ import java.util.Date;
  */
 @Entity
 public class Post {
-  @Id
+  @Id   /* specifies it as primary key */
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
   private String title;
