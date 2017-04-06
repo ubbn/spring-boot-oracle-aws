@@ -81,18 +81,18 @@
     },
 
     "OracleEngineVersion" : {
-      "us-east-1"       :  {"ver" : "11.2.0.4.v11"},
-      "us-west-1"       :  {"ver" : "11.2.0.4.v11"},
-      "us-west-2"       :  {"ver" : "11.2.0.4.v11"},
-      "ap-northeast-1"  :  {"ver" : "11.2.0.4.v11"},
-      "ap-northeast-2"  :  {"ver" : "11.2.0.4.v11"},
-      "ap-southeast-1"  :  {"ver" : "11.2.0.4.v11"},
-      "ap-southeast-2"  :  {"ver" : "11.2.0.4.v11"},
-      "eu-west-1"       :  {"ver" : "11.2.0.4.v11"},
-      "eu-central-1"    :  {"ver" : "11.2.0.4.v11"},
-      "sa-east-1"       :  {"ver" : "11.2.0.4.v11"},
-      "us-gov-west-1"   :  {"ver" : "11.2.0.4.v11"},
-      "ap-south-1"      :  {"ver" : "11.2.0.4.v11"}
+      "us-east-1"       :  {"ver" : "12.1.0.2.v5"},
+      "us-west-1"       :  {"ver" : "12.1.0.2.v5"},
+      "us-west-2"       :  {"ver" : "12.1.0.2.v5"},
+      "ap-northeast-1"  :  {"ver" : "12.1.0.2.v5"},
+      "ap-northeast-2"  :  {"ver" : "12.1.0.2.v5"},
+      "ap-southeast-1"  :  {"ver" : "12.1.0.2.v5"},
+      "ap-southeast-2"  :  {"ver" : "12.1.0.2.v5"},
+      "eu-west-1"       :  {"ver" : "12.1.0.2.v5"},
+      "eu-central-1"    :  {"ver" : "12.1.0.2.v5"},
+      "sa-east-1"       :  {"ver" : "12.1.0.2.v5"},
+      "us-gov-west-1"   :  {"ver" : "12.1.0.2.v5"},
+      "ap-south-1"      :  {"ver" : "12.1.0.2.v5"}
     }
   },
 
@@ -122,7 +122,7 @@
         "MasterUsername" : { "Ref" : "OracleDBUsername" },
         "MasterUserPassword" : { "Ref" : "OracleDBPassword" },
         "DBInstanceClass" : {"Fn::FindInMap" : [ "OracleRDSInstanceType", { "Ref" : "AWS::Region" }, "inst" ]},
-        "Engine" : "oracle-se",
+        "Engine" : "oracle-se2",
         "EngineVersion" : {"Fn::FindInMap" : [ "OracleEngineVersion", { "Ref" : "AWS::Region" }, "ver" ]},
         "LicenseModel"  : "bring-your-own-license",
         "PubliclyAccessible" : "true",
