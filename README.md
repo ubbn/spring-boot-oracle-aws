@@ -21,7 +21,7 @@ An example of using SpringBoot to quickly write a RESTful API to access Oracle d
 1. Download the JDBC driver from Oracle [website](http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html) and place it in directory `oracle-driver`
 2. Create a local maven repository and load this driver jar into it.
 3. `mvn install:install-file -Dfile=oracle-driver/ojdbc7.jar  -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0.2 -Dpackaging=jar`
-4. If a different version from the one above was used adjust `build.gradle`
+4. If a different version from the one above was used adjust `pom.xml`
 
 #### Run and test
 1. `java -jar target/spring-boot-oracle-aws-1.0-SNAPSHOT.jar`
