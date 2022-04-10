@@ -1,6 +1,6 @@
 # Spring Boot with Amazon RDS
 
-An example of using SpringBoot to quickly write a RESTful API to access Oracle database. Here we use AWS RDS, Amazon's relational database service in cloud.
+An example of using SpringBoot to quickly develop a RESTful API which accesses Oracle database backend. Here we use AWS RDS, Amazon's relational database service in cloud.
 
 ## Steps to make the project run
 
